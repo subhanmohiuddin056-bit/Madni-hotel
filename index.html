@@ -3,14 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Madni Hotel | Gujranwala</title>
 
 <style>
 *{
-  box-sizing:border-box;
   margin:0;
   padding:0;
+  box-sizing:border-box;
 }
 
 html{
@@ -19,175 +18,242 @@ html{
 
 body{
   font-family:Arial,sans-serif;
-  background:#f7f3ed;
+  background:#f6f1e8;
   color:#222;
+  line-height:1.6;
 }
 
-/* HEADER */
-header{
-  background:linear-gradient(135deg,#171717,#30240f);
+/* TOP BAR */
+.topbar{
+  background:#0d0d0d;
   color:#d9a441;
   text-align:center;
-  padding:55px 15px;
+  padding:9px;
+  font-size:14px;
+  letter-spacing:.5px;
 }
 
-header h1{
-  font-size:46px;
-  letter-spacing:3px;
-}
-
-header p{
+/* HERO */
+.hero{
+  min-height:560px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:40px 20px;
+  background:
+    linear-gradient(rgba(0,0,0,.78),rgba(0,0,0,.85)),
+    radial-gradient(circle at center,#4b3917,#080808 70%);
   color:white;
-  margin-top:12px;
-  font-size:18px;
+}
+
+.hero-content{
+  max-width:800px;
+}
+
+.badge{
+  display:inline-block;
+  border:1px solid #d9a441;
+  color:#d9a441;
+  padding:8px 18px;
+  border-radius:30px;
+  margin-bottom:20px;
+  font-size:13px;
+  letter-spacing:2px;
+}
+
+.hero h1{
+  font-size:64px;
+  letter-spacing:6px;
+  color:#d9a441;
+  margin-bottom:10px;
+}
+
+.hero h2{
+  font-size:25px;
+  font-weight:normal;
+  margin-bottom:15px;
+}
+
+.hero p{
+  color:#ddd;
+  font-size:17px;
+  max-width:620px;
+  margin:auto;
+}
+
+/* BUTTONS */
+.buttons{
+  margin-top:28px;
+}
+
+.btn{
+  display:inline-block;
+  padding:14px 25px;
+  margin:6px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
+  transition:.3s;
+}
+
+.btn:hover{
+  transform:translateY(-3px);
+}
+
+.call{
+  background:#d9a441;
+  color:#111;
+}
+
+.whatsapp{
+  background:#168b50;
+  color:white;
+}
+
+.email{
+  background:white;
+  color:#222;
 }
 
 /* NAVIGATION */
 nav{
-  background:#222;
-  padding:15px;
+  background:#111;
+  padding:16px;
   text-align:center;
   position:sticky;
   top:0;
-  z-index:100;
+  z-index:1000;
+  box-shadow:0 3px 15px #0005;
 }
 
 nav a{
   color:white;
   text-decoration:none;
-  margin:0 12px;
+  margin:0 14px;
+  font-size:14px;
   font-weight:bold;
+}
+
+nav a:hover{
+  color:#d9a441;
 }
 
 /* SECTIONS */
 section{
-  max-width:1100px;
-  margin:45px auto;
-  padding:0 15px;
+  max-width:1150px;
+  margin:70px auto;
+  padding:0 18px;
 }
 
-h2{
+.section-title{
   text-align:center;
-  font-size:32px;
-  margin-bottom:25px;
+  margin-bottom:35px;
 }
 
-/* HOME */
+.section-title span{
+  color:#b07b16;
+  font-size:14px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+}
+
+.section-title h2{
+  font-size:38px;
+  margin-top:5px;
+}
+
+.section-title p{
+  color:#666;
+  margin-top:8px;
+}
+
+/* WELCOME */
 .welcome{
   background:white;
-  padding:35px 20px;
-  border-radius:18px;
-  box-shadow:0 5px 20px #0002;
+  border-radius:22px;
+  padding:45px 30px;
   text-align:center;
-}
-
-.welcome h2{
-  color:#b07b16;
+  box-shadow:0 10px 35px #0001;
+  border-top:4px solid #d9a441;
 }
 
 .welcome p{
-  line-height:1.7;
+  max-width:750px;
+  margin:auto;
+  color:#555;
   font-size:17px;
-}
-
-/* BUTTONS */
-.buttons{
-  margin-top:22px;
-}
-
-.btn{
-  display:inline-block;
-  padding:13px 22px;
-  margin:6px;
-  border-radius:30px;
-  text-decoration:none;
-  font-weight:bold;
-}
-
-.call{
-  background:#171717;
-  color:#d9a441;
-}
-
-.whatsapp{
-  background:#198754;
-  color:white;
-}
-
-.email{
-  background:#b07b16;
-  color:white;
 }
 
 /* MENU */
 .menu{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:18px;
+  gap:20px;
 }
 
 .day{
   background:white;
-  padding:23px;
-  border-radius:16px;
-  box-shadow:0 4px 15px #0002;
+  padding:28px;
+  border-radius:18px;
+  box-shadow:0 8px 25px #0001;
+  border-left:5px solid #d9a441;
+  transition:.3s;
+}
+
+.day:hover{
+  transform:translateY(-6px);
+  box-shadow:0 15px 30px #0002;
 }
 
 .day h3{
-  color:#b07b16;
-  margin-bottom:12px;
   font-size:22px;
+  color:#b07b16;
+  margin-bottom:15px;
 }
 
 .day p{
+  color:#555;
   line-height:2;
 }
 
-/* GALLERY */
-.gallery{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:18px;
+/* SPECIAL */
+.special{
+  background:#171717;
+  color:white;
+  border-left:5px solid #d9a441;
 }
 
-.food{
-  background:white;
-  padding:10px;
-  border-radius:16px;
-  box-shadow:0 4px 15px #0002;
-  text-align:center;
+.special h3{
+  color:#d9a441;
 }
 
-.food img{
-  width:100%;
-  height:210px;
-  object-fit:cover;
-  border-radius:12px;
-  display:block;
-}
-
-.food h3{
-  color:#b07b16;
-  padding:13px 5px 8px;
+.special p{
+  color:#ddd;
 }
 
 /* FEATURES */
 .features{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:18px;
+  gap:20px;
 }
 
 .feature{
   background:white;
-  padding:28px 18px;
+  padding:32px 20px;
   text-align:center;
-  border-radius:16px;
-  box-shadow:0 4px 15px #0002;
+  border-radius:20px;
+  box-shadow:0 8px 25px #0001;
+  transition:.3s;
 }
 
-.feature .icon{
-  font-size:35px;
+.feature:hover{
+  transform:translateY(-5px);
+}
+
+.icon{
+  font-size:40px;
   margin-bottom:12px;
 }
 
@@ -199,21 +265,16 @@ h2{
 /* CONTACT */
 .contact{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:18px;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:20px;
 }
 
 .card{
   background:white;
-  padding:25px 18px;
-  border-radius:16px;
+  padding:30px 18px;
+  border-radius:20px;
   text-align:center;
-  box-shadow:0 4px 15px #0002;
-}
-
-.card .icon{
-  font-size:30px;
-  margin-bottom:10px;
+  box-shadow:0 8px 25px #0001;
 }
 
 .card h3{
@@ -222,87 +283,101 @@ h2{
 }
 
 .card a{
-  color:#222;
+  color:#333;
   text-decoration:none;
+  word-break:break-word;
 }
 
 /* LOCATION */
 .location{
-  background:#171717;
+  background:linear-gradient(135deg,#111,#2a210f);
   color:white;
-  padding:35px 20px;
+  padding:50px 25px;
+  border-radius:25px;
   text-align:center;
-  border-radius:18px;
+  box-shadow:0 12px 35px #0002;
 }
 
 .location h2{
   color:#d9a441;
+  font-size:35px;
+  margin-bottom:15px;
 }
 
 .location p{
-  line-height:1.8;
+  color:#ddd;
+  font-size:17px;
 }
 
 /* FOOTER */
 footer{
-  background:#171717;
-  color:white;
+  background:#0d0d0d;
+  color:#aaa;
   text-align:center;
-  padding:28px 15px;
-  margin-top:45px;
+  padding:35px 15px;
+  margin-top:70px;
 }
 
-footer span{
+footer strong{
   color:#d9a441;
 }
 
 /* MOBILE */
 @media(max-width:600px){
 
-  header h1{
-    font-size:34px;
+  .hero{
+    min-height:500px;
+  }
+
+  .hero h1{
+    font-size:42px;
+    letter-spacing:4px;
+  }
+
+  .hero h2{
+    font-size:20px;
   }
 
   nav a{
     display:inline-block;
-    margin:6px;
-    font-size:14px;
+    margin:5px 7px;
   }
 
-  h2{
-    font-size:27px;
+  .section-title h2{
+    font-size:30px;
   }
+
+  section{
+    margin:50px auto;
+  }
+
 }
 </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
-<header>
-  <h1>MADNI HOTEL</h1>
-  <p>Delicious Food Everyday • Gujranwala</p>
-</header>
+<!-- TOP BAR -->
+<div class="topbar">
+🍽️ Fresh Food • Friendly Service • Gujranwala
+</div>
 
-<!-- NAVIGATION -->
-<nav>
-  <a href="#home">Home</a>
-  <a href="#menu">Menu</a>
-  <a href="#gallery">Gallery</a>
-  <a href="#contact">Contact</a>
-  <a href="#location">Location</a>
-</nav>
+<!-- HERO -->
+<header class="hero">
 
-<!-- HOME -->
-<section id="home">
+<div class="hero-content">
 
-<div class="welcome">
+<div class="badge">
+WELCOME TO
+</div>
 
-<h2>Welcome to Madni Hotel</h2>
+<h1>MADNI HOTEL</h1>
+
+<h2>Delicious Food Everyday</h2>
 
 <p>
-Enjoy delicious homemade-style food at Madni Hotel.
-We serve fresh and tasty meals in Shahinabad, Gujranwala.
+Enjoy fresh, tasty and traditional food in a comfortable
+and welcoming environment.
 </p>
 
 <div class="buttons">
@@ -326,12 +401,55 @@ href="mailto:hanifwaqas845@gmail.com">
 
 </div>
 
+</header>
+
+<!-- NAVIGATION -->
+<nav>
+
+<a href="#home">Home</a>
+<a href="#menu">Menu</a>
+<a href="#gallery">Gallery</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+<a href="#location">Location</a>
+
+</nav>
+
+<!-- WELCOME -->
+<section id="home">
+
+<div class="welcome">
+
+<div class="section-title">
+
+<span>Madni Hotel</span>
+
+<h2>Welcome To Our Hotel</h2>
+
+</div>
+
+<p>
+Madni Hotel is proud to serve delicious and traditional food
+in Shahinabad, Gujranwala. Our goal is to provide fresh food,
+good quality and friendly service to every customer.
+</p>
+
+</div>
+
 </section>
 
 <!-- WEEKLY MENU -->
 <section id="menu">
 
+<div class="section-title">
+
+<span>Fresh Every Day</span>
+
 <h2>Weekly Menu</h2>
+
+<p>Our delicious dishes served throughout the week</p>
+
+</div>
 
 <div class="menu">
 
@@ -398,94 +516,70 @@ href="mailto:hanifwaqas845@gmail.com">
 </p>
 </div>
 
+<div class="day special">
+<h3>⭐ Available Every Day</h3>
+<p>
+🍗 Chicken Shami Kabab<br>
+🍚 Peelay Chawal<br>
+🍛 Biryani<br>
+🥖 Naan Shami
+</p>
+</div>
+
 </div>
 
 </section>
 
-<!-- FOOD GALLERY -->
+<!-- GALLERY -->
 <section id="gallery">
 
-<h2>Our Food Gallery</h2>
-<div class="food">
-  <img src="./kale-chane.png" alt="Kale Chane">
-  <h3>Kale Chane</h3>
-</div>
+<div class="section-title">
 
-<div class="food">
-  <img src="./alo-andy.png" alt="Alo Andy">
-  <h3>Alo Andy</h3>
-</div>
+<span>Our Specialities</span>
 
-<div class="food">
-  <img src="./daal-chana.png" alt="Daal Chana">
-  <h3>Daal Chana</h3>
-</div>
+<h2>Food Gallery</h2>
 
-<div class="food">
-  <img src="./daal-kaddu.png" alt="Daal Kaddu">
-  <h3>Daal Kaddu</h3>
-</div>
-
-<div class="food">
-  <img src="./karhi.png" alt="Karhi">
-  <h3>Karhi</h3>
-</div>
-
-<div class="food">
-  <img src="./daal-mash.png" alt="Daal Mash">
-  <h3>Daal Mash</h3>
-</div>
-
-<div class="food">
-  <img src="./aloo-baingan.png" alt="Aloo Baingan">
-  <h3>Aloo Baingan</h3>
-</div>
-
-<div class="food">
-  <img src="./anda-pyaz.png" alt="Anda Pyaz">
-  <h3>Anda Pyaz</h3>
-</div>
-
-<div class="food">
-  <img src="./aloo-shimla.png" alt="Aloo Shimla">
-  <h3>Aloo Shimla</h3>
-</div>
-
-</div>
+<p>Fresh and delicious food from Madni Hotel</p>
 
 </div>
 
 </section>
 
-<!-- WHY CHOOSE US -->
-<section>
+<!-- ABOUT -->
+<section id="about">
+
+<div class="section-title">
+
+<span>Why Us</span>
 
 <h2>Why Choose Madni Hotel?</h2>
+
+</div>
 
 <div class="features">
 
 <div class="feature">
 <div class="icon">🍽️</div>
 <h3>Fresh Food</h3>
-<p>Freshly prepared delicious meals.</p>
+<p>Freshly prepared delicious meals every day.</p>
 </div>
 
 <div class="feature">
 <div class="icon">❤️</div>
 <h3>Homemade Taste</h3>
-<p>Traditional homemade-style taste.</p>
+<p>Traditional food with a delicious homemade taste.</p>
 </div>
 
 <div class="feature">
 <div class="icon">⭐</div>
 <h3>Quality</h3>
-<p>Good food and quality service.</p>
+<p>We care about food quality and customer satisfaction.</p>
 </div>
 
 <div class="feature">
 <div class="icon">😊</div>
 <h3>Friendly Service</h3>
-<p>We welcome our customers with care.</p>
+<p>A warm and friendly experience for every customer.</p>
 </div>
 
 </div>
@@ -495,7 +589,13 @@ href="mailto:hanifwaqas845@gmail.com">
 <!-- CONTACT -->
 <section id="contact">
 
+<div class="section-title">
+
+<span>Get In Touch</span>
+
 <h2>Contact Us</h2>
+
+</div>
 
 <div class="contact">
 
@@ -511,7 +611,7 @@ href="mailto:hanifwaqas845@gmail.com">
 <div class="icon">💬</div>
 <h3>WhatsApp</h3>
 <a href="https://wa.me/923216464016" target="_blank">
-Chat on WhatsApp
+Chat With Us
 </a>
 </div>
 
@@ -538,17 +638,17 @@ hanifwaqas845@gmail.com
 
 <div class="location">
 
-<h2>📍 Find Us</h2>
+<h2>📍 Visit Madni Hotel</h2>
 
 <p>
-<strong>Madni Hotel</strong><br>
-Shahinabad, Gujranwala, Pakistan<br>
+<strong>Shahinabad, Gujranwala, Pakistan</strong>
+<br>
 Behind Gulshan-e-Iqbal Park
 </p>
 
 <div class="buttons">
 
-<a class="btn whatsapp"
+<a class="btn call"
 href="https://www.google.com/maps/search/?api=1&query=Madni+Hotel+Shahinabad+Gujranwala"
 target="_blank">
 📍 Open in Google Maps
@@ -564,7 +664,7 @@ target="_blank">
 <footer>
 
 <p>
-© 2026 <span>Madni Hotel</span>. All Rights Reserved.
+© 2026 <strong>Madni Hotel</strong>. All Rights Reserved.
 </p>
 
 <p>
