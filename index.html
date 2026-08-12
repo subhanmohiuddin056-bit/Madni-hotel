@@ -3,80 +3,241 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Madni Hotel | Weekly Menu</title>
+<title>Madni Hotel</title>
+
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Arial,sans-serif;background:#f7f3ed;color:#222}
-header{background:#171717;color:#d9a441;text-align:center;padding:28px 18px}
-header h1{font-size:38px;letter-spacing:2px}
-header p{color:#fff;margin-top:8px}
-nav{background:#222;text-align:center;padding:12px}
-nav a{color:#fff;text-decoration:none;margin:0 12px;font-weight:bold}
-section{max-width:1050px;margin:28px auto;padding:0 16px}
-h2{text-align:center;margin-bottom:18px;font-size:28px}
-.menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
-.day{background:#fff;border-radius:14px;padding:20px;box-shadow:0 4px 15px #0001}
-.day h3{color:#b07b16;margin-bottom:12px;font-size:22px}
-.day li{margin:9px 0;list-style:none}
-.day li:before{content:"🍽️ ";}.special{background:#171717;color:#fff}.special h3{color:#d9a441}
-.gallery{background:#fff;border-radius:14px;padding:12px;box-shadow:0 4px 15px #0001}
-.gallery img{width:100%;border-radius:10px;display:block}
-.info{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
-.card{background:#fff;padding:22px;border-radius:14px;text-align:center;box-shadow:0 4px 15px #0001}
-.card h3{margin-bottom:8px;color:#b07b16}
-footer{margin-top:35px;background:#171717;color:#fff;text-align:center;padding:22px}
-@media(max-width:600px){header h1{font-size:30px}nav a{display:inline-block;margin:6px 7px}}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#f7f3ed;
+  color:#222;
+}
+header{
+  background:#171717;
+  color:#d9a441;
+  text-align:center;
+  padding:35px 15px;
+}
+header h1{margin:0;font-size:40px}
+header p{color:white;font-size:18px}
+
+nav{
+  background:#222;
+  padding:15px;
+  text-align:center;
+}
+nav a{
+  color:white;
+  text-decoration:none;
+  margin:0 10px;
+  font-weight:bold;
+}
+
+section{
+  max-width:1100px;
+  margin:35px auto;
+  padding:0 15px;
+}
+
+h2{
+  text-align:center;
+  font-size:30px;
+  margin-bottom:25px;
+}
+
+.menu{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:18px;
+}
+
+.day{
+  background:white;
+  padding:22px;
+  border-radius:15px;
+  box-shadow:0 4px 15px #0002;
+}
+
+.day h3{
+  color:#b07b16;
+  margin-top:0;
+}
+
+.day p{
+  line-height:1.8;
+}
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:18px;
+}
+
+.food{
+  background:white;
+  padding:10px;
+  border-radius:15px;
+  box-shadow:0 4px 15px #0002;
+  text-align:center;
+}
+
+.food img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+  border-radius:12px;
+}
+
+.food h3{
+  color:#b07b16;
+}
+
+.contact{
+  background:white;
+  padding:25px;
+  border-radius:15px;
+  text-align:center;
+  box-shadow:0 4px 15px #0002;
+}
+
+footer{
+  background:#171717;
+  color:white;
+  text-align:center;
+  padding:25px;
+  margin-top:40px;
+}
+
+@media(max-width:600px){
+  header h1{font-size:32px}
+}
 </style>
 </head>
+
 <body>
+
 <header>
 <h1>MADNI HOTEL</h1>
 <p>Delicious Food Everyday</p>
 </header>
 
 <nav>
-<a href="#menu">Weekly Menu</a>
-<a <section id="gallery">
-<h2>Food Gallery</h2>
-<div class="gallery"><img src="menu-poster.png" alt="Madni Hotel weekly food menu"></div>
-</section>
+<a href="#menu">Menu</a>
+<a href="#gallery">Gallery</a>
 <a href="#contact">Contact</a>
-<a href="#location">Location</a>
 </nav>
 
 <section id="menu">
 <h2>Weekly Menu</h2>
-<div class="menu-grid">
-<div class="day"><h3>Monday</h3><ul><li>Kale Chane</li><li>Aloo Roti</li><li>Aloo Anday</li></ul></div>
-<div class="day"><h3>Tuesday</h3><ul><li>Aloo Anday</li><li>Daal Kaddu</li><li>Daal Chana</li></ul></div>
-<div class="day"><h3>Wednesday</h3><ul><li>Karhi</li><li>Daal Mash</li><li>Aloo Baingan</li></ul></div>
-<div class="day"><h3>Thursday</h3><ul><li>Anda Pyaz</li><li>Aloo Shimla</li><li>Kale Chane</li></ul></div>
-<div class="day"><h3>Friday</h3><ul><li>Chicken Qorma</li><li>Aloo Qeema Chicken</li><li>Aloo Palak</li></ul></div>
-<div class="day"><h3>Saturday</h3><ul><li>Bhindi</li><li>Chana Daal</li><li>Aloo Anday</li></ul></div>
-<div class="day"><h3>Sunday</h3><ul><li>Aloo Kofta</li><li>Aloo Gobhi</li><li>Masoor</li></ul></div>
-<div class="day special"><h3>Available Every Day</h3><ul><li>Chicken Shami Kabab</li><li>Peelay Chawal</li><li>Biryani</li><li>Naan Shami</li></ul></div>
+
+<div class="menu">
+
+<div class="day">
+<h3>Monday</h3>
+<p>🍛 Kaale Chane<br>🥔 Aloo Roti<br>🍳 Aloo Anday</p>
+</div>
+
+<div class="day">
+<h3>Tuesday</h3>
+<p>🍳 Aloo Anday<br>🎃 Daal Kaddu<br>🍛 Daal Chana</p>
+</div>
+
+<div class="day">
+<h3>Wednesday</h3>
+<p>🍛 Karhi<br>🥣 Daal Mash<br>🍆 Aloo Baingan</p>
+</div>
+
+<div class="day">
+<h3>Thursday</h3>
+<p>🍳 Anda Pyaz<br>🥔 Aloo Shimla<br>🍛 Kaale Chane</p>
+</div>
+
+<div class="day">
+<h3>Friday</h3>
+<p>🍗 Chicken Qorma<br>🍛 Aloo Qeema Chicken<br>🥬 Aloo Palak</p>
+</div>
+
+<div class="day">
+<h3>Saturday</h3>
+<p>🥬 Bhindi<br>🍛 Chana Daal<br>🍳 Aloo Anday</p>
+</div>
+
+<div class="day">
+<h3>Sunday</h3>
+<p>🍛 Aloo Kofta<br>🥦 Aloo Gobhi<br>🥣 Masoor</p>
+</div>
+
 </div>
 </section>
 
 <section id="gallery">
 <h2>Food Gallery</h2>
-<div class="gallery"><img src="menu-poster.png" alt="Madni Hotel weekly food menu"></div>
+
+<div class="gallery">
+
+<div class="food">
+<img src="Kaale%20chane.png" alt="Kaale Chane">
+<h3>Kaale Chane</h3>
+</div>
+
+<div class="food">
+<img src="Aloo%20andy.png" alt="Aloo Anday">
+<h3>Aloo Anday</h3>
+</div>
+
+<div class="food">
+<img src="Daal%20chana.png" alt="Daal Chana">
+<h3>Daal Chana</h3>
+</div>
+
+<div class="food">
+<img src="Daal%20kadu.png" alt="Daal Kaddu">
+<h3>Daal Kaddu</h3>
+</div>
+
+<div class="food">
+<img src="Karhi.png" alt="Karhi">
+<h3>Karhi</h3>
+</div>
+
+<div class="food">
+<img src="Daal%20mash.png" alt="Daal Mash">
+<h3>Daal Mash</h3>
+</div>
+
+<div class="food">
+<img src="aloo%20bangan.png" alt="Aloo Baingan">
+<h3>Aloo Baingan</h3>
+</div>
+
+<div class="food">
+<img src="Anda%20piyaz.png" alt="Anda Pyaz">
+<h3>Anda Pyaz</h3>
+</div>
+
+<div class="food">
+<img src="ALOO%20shimla.png" alt="Aloo Shimla">
+<h3>Aloo Shimla</h3>
+</div>
+
+</div>
 </section>
 
 <section id="contact">
 <h2>Contact Us</h2>
-<div class="info">
-<div class="card"><h3>Phone</h3><p>Add your phone number</p></div>
-<div class="card"><h3>WhatsApp</h3><p>Add your WhatsApp number</p></div>
-<div class="card"><h3>Opening Hours</h3><p>Add your opening and closing time</p></div>
+
+<div class="contact">
+<p>📞 Phone: Add your number</p>
+<p>💬 WhatsApp: Add your WhatsApp number</p>
+<p>🕐 Opening Hours: Add your timing</p>
+<p>📍 Location: Add your hotel address</p>
 </div>
 </section>
 
-<section id="location">
-<h2>Location</h2>
-<div class="card"><h3>Madni Hotel</h3><p>Add your full address here.</p></div>
-</section>
+<footer>
+© 2026 Madni Hotel. All Rights Reserved.
+</footer>
 
-<footer>© 2026 Madni Hotel. All Rights Reserved.</footer>
 </body>
 </html>
