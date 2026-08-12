@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Madni Hotel | Weekly Menu</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#f7f3ed;color:#222}
+header{background:#171717;color:#d9a441;text-align:center;padding:28px 18px}
+header h1{font-size:38px;letter-spacing:2px}
+header p{color:#fff;margin-top:8px}
+nav{background:#222;text-align:center;padding:12px}
+nav a{color:#fff;text-decoration:none;margin:0 12px;font-weight:bold}
+section{max-width:1050px;margin:28px auto;padding:0 16px}
+h2{text-align:center;margin-bottom:18px;font-size:28px}
+.menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.day{background:#fff;border-radius:14px;padding:20px;box-shadow:0 4px 15px #0001}
+.day h3{color:#b07b16;margin-bottom:12px;font-size:22px}
+.day li{margin:9px 0;list-style:none}
+.day li:before{content:"🍽️ ";}.special{background:#171717;color:#fff}.special h3{color:#d9a441}
+.gallery{background:#fff;border-radius:14px;padding:12px;box-shadow:0 4px 15px #0001}
+.gallery img{width:100%;border-radius:10px;display:block}
+.info{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{background:#fff;padding:22px;border-radius:14px;text-align:center;box-shadow:0 4px 15px #0001}
+.card h3{margin-bottom:8px;color:#b07b16}
+footer{margin-top:35px;background:#171717;color:#fff;text-align:center;padding:22px}
+@media(max-width:600px){header h1{font-size:30px}nav a{display:inline-block;margin:6px 7px}}
+</style>
+</head>
+<body>
+<header>
+<h1>MADNI HOTEL</h1>
+<p>Delicious Food Everyday</p>
+</header>
+
+<nav>
+<a href="#menu">Weekly Menu</a>
+<a href="#gallery">Food Gallery</a>
+<a href="#contact">Contact</a>
+<a href="#location">Location</a>
+</nav>
+
+<section id="menu">
+<h2>Weekly Menu</h2>
+<div class="menu-grid">
+<div class="day"><h3>Monday</h3><ul><li>Kale Chane</li><li>Aloo Roti</li><li>Aloo Anday</li></ul></div>
+<div class="day"><h3>Tuesday</h3><ul><li>Aloo Anday</li><li>Daal Kaddu</li><li>Daal Chana</li></ul></div>
+<div class="day"><h3>Wednesday</h3><ul><li>Karhi</li><li>Daal Mash</li><li>Aloo Baingan</li></ul></div>
+<div class="day"><h3>Thursday</h3><ul><li>Anda Pyaz</li><li>Aloo Shimla</li><li>Kale Chane</li></ul></div>
+<div class="day"><h3>Friday</h3><ul><li>Chicken Qorma</li><li>Aloo Qeema Chicken</li><li>Aloo Palak</li></ul></div>
+<div class="day"><h3>Saturday</h3><ul><li>Bhindi</li><li>Chana Daal</li><li>Aloo Anday</li></ul></div>
+<div class="day"><h3>Sunday</h3><ul><li>Aloo Kofta</li><li>Aloo Gobhi</li><li>Masoor</li></ul></div>
+<div class="day special"><h3>Available Every Day</h3><ul><li>Chicken Shami Kabab</li><li>Peelay Chawal</li><li>Biryani</li><li>Naan Shami</li></ul></div>
+</div>
+</section>
+
+<section id="gallery">
+<h2>Food Gallery</h2>
+<div class="gallery"><img src="menu-poster.png" alt="Madni Hotel weekly food menu"></div>
+</section>
+
+<section id="contact">
+<h2>Contact Us</h2>
+<div class="info">
+<div class="card"><h3>Phone</h3><p>Add your phone number</p></div>
+<div class="card"><h3>WhatsApp</h3><p>Add your WhatsApp number</p></div>
+<div class="card"><h3>Opening Hours</h3><p>Add your opening and closing time</p></div>
+</div>
+</section>
+
+<section id="location">
+<h2>Location</h2>
+<div class="card"><h3>Madni Hotel</h3><p>Add your full address here.</p></div>
+</section>
+
+<footer>© 2026 Madni Hotel. All Rights Reserved.</footer>
+</body>
+</html>
